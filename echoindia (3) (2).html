@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 547px;
+        margin: auto;
+        margin: 5rem;
+        min-width: 300px;
+      }
+
+      @media screen and (max-width: 820px) {
+        .container {
+          flex-direction: column-reverse;
+          height: 100%;
+          width: 100%;
+          width: 400px;
+        }
+        .side {
+          display: none;
+        }
+        .form {
+          width: 100%;
+        }
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 30dvw;
+        align-items: center;
+        background-color: whitesmoke;
+        padding-bottom: 2rem;
+      }
+      .form h2 {
+        font-size: 2.1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 40px;
+        text-align: center;
+      }
+
+      .box {
+        padding: 12px;
+        width: 65%;
+        margin: 15px;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 20px;
+      }
+      .side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(225, 236, 236);
+      }
+      .side img {
+        width: 450px;
+        height: 400px;
+        background-color: transparent;
+      }
+      .form img {
+        width: 120px;
+        padding: 10px;
+        margin: 0px;
+      }
+      .form a {
+        text-decoration: none;
+      }
+      #login {
+        color: white;
+        background-color: black;
+        letter-spacing: 1.2px;
+        padding: 10px 18px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+      .form #login:hover {
+        background-color: rgb(45, 43, 43);
+      }
+      #f-p {
+        color: royalblue;
+        margin-left: 100px;
+        font-size: smaller;
+      }
+      #f-p:hover {
+        color: rgb(58, 58, 176);
+      }
+      #meme {
+        color: royalblue;
+      }
+      #meme:hover {
+        color: rgb(58, 58, 176);
+      }
+      .form p {
+        margin-top: 15px;
+      }
+
+      .button {
+        background-color: white;
+        color: blue;
+        border-radius: 5px;
+        width: max(20dvw, 250px);
+        border: 1px solid blue;
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .orSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: max(20dvw, 250px);
+        margin: 0.5rem 0;
+      }
+
+      .orSection hr {
+        width: 12dvw;
+      }
+
+      .orSection p {
+        background-color: rgb(167, 167, 167);
+        border-radius: 50px;
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+        color: black;
+        margin-top: -0.25rem;
+      }
+
+      #continueWithGoogleBtn {
+        filter: grayscale(75%);
+      }
+
+      .terms {
+        width: max(20dvw, 250px);
+        font-size: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form">
+        <img src="echo image.jpeg" alt="" />
+        <h2>Welcome to iECHO</h2>
+        <p>Please choose an option to continue</p>
+        <button class="button" id="continueWithEmailBtn">
+          Continue with Email
+        </button>
+        <button class="button" id="continueWithMobileBtn">
+          Continue with Mobile
+        </button>
+        <div class="orclass">
+          <div class="orSection">
+            <hr />
+            <p id="or">or</p>
+            <hr />
+          </div>
+        </div>
+        <button class="button" id="continueWithGoogleBtn" disabled>
+          Continue with Google
+        </button>
+        <p class="terms">
+          By continuing, you accept the
+          <a href="#" id="terms">Termsw of Use </a>and
+          <a href="#" id="privacy">Privacy Policy</a>
+        </p>
+        <!--  
+            <a href="#" id="login">LOGIN</a>
+            <p>Not a member?<a href="./UHC_Register.html" id="meme">Register Now</a></p>
+            -->
+      </form>
+      <div class="side">
+        <img src="main image.jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
